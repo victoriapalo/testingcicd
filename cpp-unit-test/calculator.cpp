@@ -1,4 +1,5 @@
 #include "calculator.h"
+#include "cmath"
 #include <stdexcept>
 
 // calculator.cpp
@@ -18,6 +19,11 @@ int subtract(int a, int b) {
 // Multiplies two integers.
 int multiply(int a, int b) {
     return a * b;
+}
+
+int power(int a, int b) {
+   return pow(a, b);
+   
 }
 
 // Divides first integer by second.

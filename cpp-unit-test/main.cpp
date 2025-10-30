@@ -4,7 +4,7 @@
 
 int main() {
     std::cout << "=== Simple Calculator ===\n";
-    std::cout << "Available operations: add, subtract, multiply, divide\n";
+    std::cout << "Available operations: add, subtract, multiply, divide, power\n";
     std::cout << "Type 'exit' to quit.\n\n";
 
     while (true) {
@@ -17,7 +17,7 @@ int main() {
             break;
         }
 
-        if (op != "add" && op != "subtract" && op != "multiply" && op != "divide") {
+        if (op != "add" && op != "subtract" && op != "multiply" && op != "divide" && op != "power") {
             std::cout << "Invalid operation. Try again.\n\n";
             continue;
         }
@@ -35,6 +35,8 @@ int main() {
             else if (op == "subtract") result = subtract(a, b);
             else if (op == "multiply") result = multiply(a, b);
             else if (op == "divide") result = divide(a, b);
+            else if (op == "power") result = power(a, b);
+
 
             std::cout << "Result: " << result << "\n\n";
         } 

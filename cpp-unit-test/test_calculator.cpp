@@ -21,6 +21,11 @@ TEST_CASE("Multiplication works", "[multiply]") {
     REQUIRE(multiply(-2, 3) == -6);
 }
 
+TEST_CASE("Exponential works (base, exponent)", "[power]") {
+    REQUIRE(power(2, 4) == 16);
+    REQUIRE(power(2, 3) == 8);
+}
+
 TEST_CASE("Division works", "[divide]") {
     // Catch2 v3 requires Catch::Approx for approximate floating-point comparison.
     REQUIRE(divide(10, 2) == Catch::Approx(5.0));
